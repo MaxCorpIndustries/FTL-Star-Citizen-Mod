@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<shipBlueprint name="PLAYER_SHIP_MANTIS" layout="Prospector" img="Prospector">
+	<class id="text_PLAYER_SHIP_MANTIS_class">Heavy Mining Class</class>
+	<name id="text_PLAYER_SHIP_MANTIS_name">The Prospector</name>
+	<desc id="text_PLAYER_SHIP_MANTIS_desc">For years, the Prospector has been the universe’s preferred mining vessel for solo operators. Featuring MISC’s sleek design sensibility and a bevy of upgraded high-tech mining tools, the 2947 Prospector perfectly balances form and functionality.</desc>
+	<systemList>
+		<doors power="1" room="10" start="true" img="room_doors">
+			<slot>
+				<direction>down</direction>
+				<number>4</number>
+			</slot>
+		</doors>
+		<drones power="1" room="5" start="true" img="room_drones" />
+		<engines power="2" room="3" start="true" img="room_engines">
+			<slot>
+				<direction>down</direction>
+				<number>6</number>
+			</slot>
+		</engines>
+		<medbay power="1" room="7" start="true" img="room_medbay">
+			<slot>
+				<number>1</number>
+			</slot>
+		</medbay>
+		<oxygen power="1" room="2" start="true" img="room_oxygen" />
+		<pilot power="3" room="0" start="true" img="room_pilot">
+			<slot>
+				<direction>right</direction>
+				<number>3</number>
+			</slot>
+		</pilot>
+		<sensors power="3" room="6" start="true" img="room_sensors">
+			<slot>
+				<direction>down</direction>
+				<number>7</number>
+			</slot>
+		</sensors>
+		<shields power="2" room="1" start="true" img="room_shields">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</shields>
+		<weapons power="4" room="4" start="true" img="room_weapons">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="30" count="4">
+		<weapon name="LASER_BURST_2_A" />
+		<weapon name="LASER_BURST_2_A" />
+		<weapon name="BEAM_HULL" />
+	</weaponList>
+	<droneList drones="7" count="2" />
+	<health amount="30" />
+	<maxPower amount="17" />
+	<crewCount amount="1" class="human" />
+	<crewCount amount="1" class="human" />
+	<crewCount amount="1" class="energy" />
+	<aug name="SCRAP_COLLECTOR" />
+	<aug name="ROCK_ARMOR" />
+</shipBlueprint>
+
