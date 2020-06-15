@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<shipBlueprint name="PLAYER_SHIP_STEALTH" layout="Mustang Gamma" img="Mustang Gamma">
+	<class id="text_PLAYER_SHIP_STEALTH_class">Light Cargo</class>
+	<name id="text_PLAYER_SHIP_STEALTH_name">Mustang Gamma</name>
+	<desc id="text_PLAYER_SHIP_STEALTH_desc">The Mustang Gamma has smooth acceleration, and power on demand thanks to an innovative package featuring three powerful Magma Jet engines for maximum thrust.</desc>
+	<systemList>
+		<cloaking power="1" room="1" start="true" img="room_cloaking" />
+		<doors power="1" room="9" start="true" img="room_doors">
+			<slot>
+				<direction>up</direction>
+				<number>0</number>
+			</slot>
+		</doors>
+		<engines power="2" room="2" start="true" img="room_engines">
+			<slot>
+				<direction>down</direction>
+				<number>2</number>
+			</slot>
+		</engines>
+		<medbay power="1" room="11" start="true" img="room_medbay">
+			<slot>
+				<number>1</number>
+			</slot>
+		</medbay>
+		<oxygen power="1" room="10" start="true" img="room_oxygen" />
+		<pilot power="2" room="0" start="true" img="room_pilot">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
+		<sensors power="1" room="6" start="true" img="room_sensors">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="2" room="8" start="true" img="room_shields">
+			<slot>
+				<direction>left</direction>
+				<number>0</number>
+			</slot>
+		</shields>
+		<weapons power="3" room="5" start="true" img="room_weapons">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>1</droneSlots>
+	<weaponList missiles="4" count="4">
+		<weapon name="LASER_BURST_1" />
+		<weapon name="LASER_BURST_2_A" />
+	</weaponList>
+	<droneList drones="0" count="1" />
+	<health amount="30" />
+	<maxPower amount="9" />
+	<crewCount amount="1" class="human" />
+	<crewCount amount="1" class="human" />
+	<crewCount amount="1" class="engi" />
+	<aug name="FTL_BOOSTER" />
+</shipBlueprint>
+
