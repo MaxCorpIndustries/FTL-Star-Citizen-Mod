@@ -1,2 +1,2 @@
 # Preview:
-![alt text](images/freelancer_preview.png)
+![alt text](freelancer_preview.png)
